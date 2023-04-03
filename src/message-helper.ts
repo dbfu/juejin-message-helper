@@ -101,7 +101,7 @@ export class MessageHelper {
     try {
       this.texts = await this.service?.getLatestArticleCount() || [];
       if (!this.texts?.length) {
-        this.statusBarItem.text = '接口调用失败，请稍后刷新重试。';
+        this.statusBarItem.text = '你可能还没有写文章吧，请先写一篇文章。';
       } else {
         this.statusBarItem.text = this.texts.join('\t');
       }
