@@ -2,7 +2,7 @@
 	"name": "juejin-message-helper",
 	"displayName": "掘金消息助手",
 	"description": "掘金个人消息助手",
-	"version": "0.0.9",
+	"version": "1.0.0",
 	"publisher": "dbfu321",
 	"repository": {
 		"url": "https://github.com/dbfu/juejin-message-helper.git"
