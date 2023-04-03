@@ -15,7 +15,7 @@ https://api.juejin.cn/interact_api/v1/message/count?aid=2608&uuid=70562204636595
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/09147dca4dd14a7dbd9b085eeff31497~tplv-k3u1fbpfcp-watermark.image?)
 ## 复制下面的cookie
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d3ec6ee1ed0b48ddbeaabe041c85115d~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f18bc363e1e84bc98787eb712019def6~tplv-k3u1fbpfcp-watermark.image?)
 ## 在vscode中设置刚复制cookie
 
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/579b17230ad349448a28de1c68818526~tplv-k3u1fbpfcp-watermark.image?)
