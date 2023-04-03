@@ -1,0 +1,67 @@
+{
+	"name": "juejin-message-helper",
+	"displayName": "掘金消息助手",
+	"description": "掘金个人消息助手",
+	"version": "0.0.6",
+	"publisher": "dbfu321",
+	"engines": {
+		"vscode": "^1.77.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"icon": "icon.png",
+	"contributes": {
+		"commands": [
+			{
+				"command": "juejin-helper.show",
+				"title": "show juejin"
+			}
+		],
+		"configuration": [
+			{
+				"title": "juejin-message-helper",
+				"properties": {
+					"juejin-cookie": {
+						"title": "掘金个人cookie",
+						"type": "string"
+					},
+					"juejin-refresh-time-span": {
+						"title": "最新文章数据刷新时间间隔,最少30秒,单位秒",
+						"type": "number",
+            "minimum": 30,
+						"default": 60
+					}
+				}
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.0",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.77.0",
+		"@typescript-eslint/eslint-plugin": "^5.12.1",
+		"@typescript-eslint/parser": "^5.12.1",
+		"@vscode/test-electron": "^2.1.2",
+		"eslint": "^8.9.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.2.1",
+		"typescript": "^4.5.5"
+	},
+	"dependencies": {
+		"axios": "^1.3.4"
+	}
+}
