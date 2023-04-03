@@ -2,7 +2,7 @@
 	"name": "juejin-message-helper",
 	"displayName": "掘金消息助手",
 	"description": "掘金个人消息助手",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"publisher": "dbfu321",
 	"repository": {
 		"url": "https://github.com/dbfu/juejin-message-helper.git"
@@ -39,13 +39,15 @@
 				"properties": {
 					"juejin-cookie": {
 						"title": "掘金个人cookie",
-						"type": "string"
+						"type": "string",
+						"description": "掘金个人cookie"
 					},
 					"juejin-refresh-time-span": {
 						"title": "最新文章数据刷新时间间隔,最少30秒,单位秒",
 						"type": "number",
 						"minimum": 30,
-						"default": 60
+						"default": 60,
+						"description": "最新文章数据刷新时间间隔,最少30秒,单位秒"
 					}
 				}
 			}
