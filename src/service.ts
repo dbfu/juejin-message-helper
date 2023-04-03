@@ -1,7 +1,6 @@
 import axios, { AxiosInstance } from 'axios';
 
 export const juejinBaseUrl = 'https://juejin.cn';
-
 export interface Message {
   message: string;
   count: number;

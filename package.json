@@ -4,6 +4,17 @@
 	"description": "掘金个人消息助手",
 	"version": "0.0.6",
 	"publisher": "dbfu321",
+	"repository": {
+		"url": "https://github.com/dbfu/juejin-message-helper.git"
+	},
+	"bugs": {
+		"url": "https://github.com/dbfu/juejin-message-helper/issues"
+	},
+	"keywords": [
+		"message",
+		"掘金",
+		"juejin"
+	],
 	"engines": {
 		"vscode": "^1.77.0"
 	},
@@ -33,7 +44,7 @@
 					"juejin-refresh-time-span": {
 						"title": "最新文章数据刷新时间间隔,最少30秒,单位秒",
 						"type": "number",
-            "minimum": 30,
+						"minimum": 30,
 						"default": 60
 					}
 				}
