@@ -133,7 +133,7 @@ export class Service {
         });
       }
 
-      if (newsCount !== this.lastFanCount && newsCount > 0) {
+      if (newsCount !== this.lastNewsCount && newsCount > 0) {
         messages.push({
           message: `条新的私信`,
           url: '/notification/im',
@@ -141,7 +141,7 @@ export class Service {
         });
       }
 
-      if (noticeCount !== this.lastNewsCount && noticeCount > 0) {
+      if (noticeCount !== this.lastNoticeCount && noticeCount > 0) {
         messages.push({
           message: `条新的系统通知`,
           url: '/notification/system',

@@ -29,8 +29,8 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "juejin-helper.show",
-				"title": "show juejin"
+				"command": "juejin-helper.refresh",
+				"title": "refresh juejin"
 			}
 		],
 		"configuration": [

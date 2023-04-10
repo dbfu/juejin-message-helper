@@ -7,6 +7,12 @@ export async function activate(context: vscode.ExtensionContext) {
 	let messageHelper = new MessageHelper();
 	messageHelper.startListen();
 
+	function refresh() {
+		messageHelper.stopListen();
+		messageHelper = new MessageHelper();
+		messageHelper.startListen();
+	}
+
 	// 监听配置时候改变，如果改变则重新new一个对象，重新监听
 	const disposable = vscode.workspace.onDidChangeConfiguration(event => {
 		if (
@@ -15,12 +21,15 @@ export async function activate(context: vscode.ExtensionContext) {
 				'juejin-refresh-time-span',
 			].some(str => event.affectsConfiguration(str))
 		) {
-			messageHelper.stopListen();
-			messageHelper = new MessageHelper();
-			messageHelper.startListen();
+			refresh();
 		}
 	});
 
+	const refreshDisposable = vscode.commands.registerCommand('juejin-helper.refresh', () => {
+		refresh();
+	});
+
+	context.subscriptions.push(refreshDisposable);
 	context.subscriptions.push(disposable);
 }
 
